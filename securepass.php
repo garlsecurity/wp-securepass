@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: SecurePass authentication
-Plugin URI: http://www.secure-pass.net/
+Plugin URI: https://github.com/gpaterno/wp-securepass
 Description:  Authenticates Wordpress usernames against SecurePass
 Version: 0.1
 Author: Giuseppe Paterno' (gpaterno@gpaterno.com)
