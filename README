@@ -1,0 +1,6 @@
+This is a wordpress plugin to autheticate aganst SecurePass, http://www.secure-pass.net
+Initially written by Giuseppe Paterno' (gpaterno@gpaterno.com)
+
+Read the comments in the securepass.php and set the variables accordingly,
+with specific regards to the $radius_secret that must match the one defined
+on SecurePass.
