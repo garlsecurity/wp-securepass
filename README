@@ -10,6 +10,9 @@ Although is known to work, use it at YOUR OWN RISK.
 
 Neither the author(s), SecurePass or GARL Sagl is responsible for this software.
 
+This plug-in contains "Pure PHP radius class", a PHP class to connect to
+RADIUS. This sofware is Copyright (c) 2008, SysCo systemes de communication sa
+
 
 == Preface ==
 A lot of web sites, even well known ones (newspapers, telcos, ...) adopts 
