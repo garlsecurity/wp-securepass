@@ -22,6 +22,7 @@ can happen that password leaking or guessing might lead to unauthorized
 access to the platform. A potential attacker can be therefore able to 
 change articles, part of the web site and/or make the website unavailable,
 with image and economic damages for a company or for a blogger.
+This is even more true if your website is not SSL protected.
 
 SecurePass is a SaaS service offering an easy and affordable solution
 for One Time Passwords (OTP) and strong authentication in general. They 
