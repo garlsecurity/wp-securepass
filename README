@@ -5,6 +5,7 @@ Read the comments in the securepass.php and set the variables accordingly,
 with specific regards to the $radius_secret that must match the one defined
 on SecurePass.
 
+This software is released under GPLv2.
 Please note that this software comes with NO WARRANTIES!!!!!
 Although is known to work, use it at YOUR OWN RISK.
 
@@ -23,9 +24,10 @@ change articles, part of the web site and/or make the website unavailable,
 with image and economic damages for a company or for a blogger.
 
 SecurePass is a SaaS service offering an easy and affordable solution
-for strong authentication. They offer 5 users for free included with their
-standard (=basic) account, which is more than enough for standard blogs and
-web sites. Companies can increase users, if needed.
+for One Time Passwords (OTP) and strong authentication in general. They 
+offer 5 users for free included with their standard (=basic) account, which
+is more than enough for standard blogs and web sites. Companies can purchase
+additional users, if needed.
 
 == Setup and configure SecurePass ==
 If you don’t own already an account with SecurePass, you can sign-up for a new account here: http://www.secure-pass.net/open

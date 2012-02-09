@@ -13,8 +13,11 @@ Author URI: http://www.gpaterno.com/
  * perfect, but it seems to work for basic operations.
  * Feel free to contribute to it.
  *
+ * This software is released under GPLv2.
  * Please note that this software comes with NO WARRANTIES!!!!!
  * Although is known to work, use it at YOUR OWN RISK.
+ * Full GPLv2 license is on:
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
  * Neither the author(s), SecurePass or GARL Sagl is responsible 
  * for this software.
