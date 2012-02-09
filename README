@@ -52,11 +52,11 @@ RADIUS server of SecurePass, located in Switzerland (Lugano).
 A secondary RADIUS is available in Italy (Milan), if you prefer this
 location change $radius_host to 'radius2.secure-pass.net'.
 
-Before going to the next step, create an user in wordpress that matches a
-username in SecurePass and grant full administrative powers. This because the
-admin user will be no longer checked locally. In case you won't be able to 
-login anymore, a workaround is moving the securepass plugin directory
-to another directory name, ex: "mv securepass securepass.old".
+WARNING!!! Before going to the next step, create an user in wordpress that
+matches a username in SecurePass and grant full administrative powers.
+This because the admin user will be no longer checked locally. In case you 
+won't be able to login anymore, a workaround is moving the securepass plugin 
+directory to another directory name, ex: "mv securepass securepass.old".
 
 Go to your WordPress configuration panel, select Plugins and activate the
 "SecurePass authentication" plugin.
