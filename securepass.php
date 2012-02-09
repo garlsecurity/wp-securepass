@@ -13,6 +13,12 @@ Author URI: http://www.gpaterno.com/
  * perfect, but it seems to work for basic operations.
  * Feel free to contribute to it.
  *
+ * Please note that this software comes with NO WARRANTIES!!!!!
+ * Although is known to work, use it at YOUR OWN RISK.
+ *
+ * Neither the author(s), SecurePass or GARL Sagl is responsible 
+ * for this software.
+ *
  * A known limitation is the failure of a datacenter.
  * The used radius PHP class don't handle it, instead it reports
  * "authentication failure" on timeout. You might wish to consider
