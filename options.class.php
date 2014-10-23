@@ -549,7 +549,7 @@ final class WPSecurePassOptions {
       <?php else : ?>
 
         <div id="wpsp_restful_section" class="error">
-          <p><?php _e( 'RESTFul API Error:' ) . $restful_status->errorMsg ?></p>
+          <p><?php printf( '%s %s', __( 'RESTFul API Error:' ),  $restful_status->errorMsg ) ?></p>
         </div>
 
       <?php endif; ?>
