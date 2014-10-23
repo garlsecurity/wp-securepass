@@ -1,0 +1,84 @@
+/**
+ * CSS Style for Options page
+ */
+
+.clearfix
+{
+  *zoom : 1 !important;
+}
+
+.clearfix:before,
+.clearfix:after
+{
+  display     : table !important;
+  line-height : 0 !important;
+  content     : "" !important;
+}
+
+.clearfix:after
+{
+  clear : both !important;
+}
+
+form#wp-securepass-options
+{
+  margin : 0 16px 0 0;
+}
+
+table.form-table
+{
+  border-collapse       : separate;
+  background-color      : #f8f8f8;
+  border                : 1px solid #e5e5e5;
+  -moz-border-radius    : 3px;
+  -webkit-border-radius : 3px;
+  border-radius         : 3px;
+}
+
+table.form-table th,
+table.form-table td
+{
+  padding        : 10px;
+  vertical-align : top;
+}
+
+table.form-table td input[type="text"]
+{
+  width : 100%;
+}
+
+/* OVERRIDE WORDPRESS ERROR */
+
+table.form-table td div.error,
+table.form-table td div.updated
+{
+  margin : 0;
+}
+
+/* LISTS USERS */
+select#temp-users
+{
+  width : 280px;
+  float : left;
+}
+
+select#wpsp_field_list_users
+{
+  width     : 280px;
+  float     : left;
+  font-size : 12px;
+}
+
+button#wpsp-button-add,
+button#wpsp-button-remove,
+button#wpsp-button-remove-all
+{
+  width       : 100px;
+  margin-left : 8px;
+}
+
+button#wpsp-button-remove-all
+{
+  margin           : 8px 0 0 8px;
+  background-color : rgba(226, 134, 138, 0.11);
+}
