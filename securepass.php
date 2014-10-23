@@ -3,7 +3,7 @@
 Plugin Name: SecurePass authentication
 Plugin URI: https://github.com/gpaterno/wp-securepass
 Description:  Authenticates Wordpress usernames against SecurePass
-Version: 0.1
+Version: 0.2.0
 Author: Giuseppe Paterno' (gpaterno@gpaterno.com)
 Author URI: http://www.gpaterno.com/
 */
@@ -35,36 +35,32 @@ Author URI: http://www.gpaterno.com/
  * any more, a workaround is moving the securepass plugin directory
  * to another directory name, ex: "mv securepass securepass.old".
  */
- 
 
-// Load the radius class
-require_once('radius.class.php');
-
-// Add authentication filter
-add_filter('authenticate', 'sp_authenticate', 10, 3);
-
-// The core authentication function
-function sp_authenticate( $user, $username, $password ){
-     /* 
-      * Set the default SecurePass radius server
-      * We point to the Swiss datacenter here by default, 
-      * change radius_host to radius2.secure-pass.net to point to Milan 
-      * don't forget to change the secret accordingly
-      */
-     $radius_host = 'radius1.secure-pass.net';
-     $radius_secret = 'CHANGEME';     // <-- DON'T FORGET TO CHANGE IT!!!!!
-
-     // Get info
-     $user = get_userdatabylogin( $username ); 
-     $radius = new Radius($radius_host, $radius_secret);
- 
-     // Check the password via RADIUS
-     if (! $radius->AccessRequest($username, $password)) {
-        $user = new WP_Error( 'denied', __("<strong>ERROR</strong>: Invalid username and password.") );
-        remove_action('authenticate', 'wp_authenticate_username_password', 20);
-     }
- 
-     return $user;
+// Avoid directly access
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
 
-?>
+// Get plugin path
+define( 'WP_SECUREPASS_PATH', trailingslashit( dirname( __FILE__) ) );
+
+// Load defines
+require_once( WP_SECUREPASS_PATH . 'defines.php' );
+
+// Load the radius class
+require_once( WP_SECUREPASS_PATH . 'radius.class.php' );
+
+// Load the RESTFul api controller class
+require_once( WP_SECUREPASS_PATH . 'restful.class.php' );
+
+// Load the securepass options class
+require_once( WP_SECUREPASS_PATH . 'options.class.php' );
+
+// Load the securepass controller class
+require_once( WP_SECUREPASS_PATH . 'securepass.class.php' );
+
+// Init options
+WPSecurePassOptions::init();
+
+// Init (main) controller
+WPSecurePassController::init();
