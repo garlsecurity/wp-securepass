@@ -63,7 +63,7 @@ This because the admin user will be no longer checked locally. In case you
 won't be able to login anymore, a workaround is moving the securepass plugin 
 directory to another directory name, ex: "mv securepass securepass.old".
 
-== Setup for SecurePass Beta (aka Dreamliner ==
+== Setup for SecurePass Beta (aka Dreamliner) ==
 With the SecurePass tools, create a new app, with readonly capabilities and possibly restricing IPs 
 to the wordpress IP address or network.
 
